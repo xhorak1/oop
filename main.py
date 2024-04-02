@@ -1,23 +1,13 @@
-# import os
+from Fraction import Fraction
 
-def write_to_file(file_name, data):
-    with open(file_name, "w") as file_handler:
-        file_handler.write(data)
+f1 = Fraction(1, 3)
 
-def read_from_file(file_name):
-    data = None
-    with open(file_name, "r") as file_handler:
-        data = file_handler.read()
+print(f1)
 
-    return data
+f2 = Fraction(2, 3)
 
+print(f1 == f2)
 
-if __name__ == '__main__':
-    MY_FILE = "file.txt"
+f3 = f2 + f1
 
-    user_input = input("Zadej zprávu: ")
-    write_to_file(MY_FILE, user_input)
-    print("Zápis se povedl")
-
-    data = read_from_file(MY_FILE)
-    print(data)
+print(f3)
