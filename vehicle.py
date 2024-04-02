@@ -5,6 +5,9 @@ class Vehicle:
     def start(self):
         print(f"Startuju vozidlo {self.name}")
 
+    def stop(self):
+        print(f"Zastavuju vozidlo {self.name}")
+
 v1 = Vehicle("Vehicle1")  #list()
 v2 = Vehicle("Vehicle2")
 v3 = Vehicle("Vehicle3")
@@ -14,3 +17,4 @@ print(v2.name)
 print(v3.name)
 print(type(v1))
 v2.start()
+v3.stop()
