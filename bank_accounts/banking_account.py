@@ -1,9 +1,13 @@
 class BankAccount:
+    counter = 0
 
     def __init__(self, deposit=0):
         self._balance = deposit
     def deposit(self, money):
         self._balance += money
+
+    def add_counter(cls, num):
+        cls.counter += num
 
     def withdraw(self, money):
         try:
@@ -11,7 +15,7 @@ class BankAccount:
                 self._balance -= money
                 return money
         except:
-            print("Error")
+            raise ValueError
 
 
     def __str__(self):
