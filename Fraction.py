@@ -15,6 +15,6 @@ class Fraction:
         spodek = self.denominator * other. denominator
         new_nominator = self.nominator * other.denominator + other.nominator * self.denominator
         return Fraction(new_nominator, spodek)
-
+;
 
 
