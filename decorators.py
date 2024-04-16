@@ -12,6 +12,13 @@ def decorator(myFunction):
 
 current_time = decorator(time)
 
+@decorator
+def time():
+    current_time = datetime.now()
+    return current_time
+
+print(time)
+
 
 
 

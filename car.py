@@ -9,4 +9,7 @@ class Car(Vehicle):
     def turn(self, direction):
         print(f"Odbočím do {direction}")
 
+    def __str__(self):
+        return f"name: {self.name}, color: {self.color}"
+
 
